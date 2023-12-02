@@ -2,22 +2,23 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import logo from "../images/IIRE-Logo2021_black-1.png";
 
 function NavBar() {
   return (
     <>
-      <Navbar className="bg-body-tertiary">
+      <Navbar bg="dark" data-bs-theme="dark" sticky="top">
         <Container>
           <Navbar.Brand href="#home">
             <img
-              src="/img/logo.svg"
+              src={logo}
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top logo"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className="nav-menu">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
