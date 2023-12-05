@@ -7,3 +7,19 @@
   margin: auto;
   flex-grow: 0;
 }
+.service-card-image{
+  width: 100px;
+}
+.service-card{
+  margin: auto;
+  width: 25%;
+  align-items: center;
+}
+.service-cards{
+  display: flex;
+
+}
+.card-body{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
